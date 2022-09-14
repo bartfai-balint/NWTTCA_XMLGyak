@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+	<cim>Adatkezelés XML-ben</cim>
+	<hallgatok>
+		<hallgato id="1">
+			<nev>Kis Béla</nev>
+			<lakcim>Heves</lakcim>
+		</hallgato>
+		<hallgato id="2">
+			<nev>Nagy Béla</nev>
+			<lakcim>Munkács</lakcim>
+		</hallgato>
+	</hallgatok>
+	<helyszin>Miskolc</helyszin>
+	<eloado>
+		<nev>Dr. Doktor Doktor</nev>
+		<adoszam>123-456</adoszam>
+		<lakcim>Nagykanizsa</lakcim>
+	</eloado>
+	<datum>2022.09.14</datum>
+</konferencia>
