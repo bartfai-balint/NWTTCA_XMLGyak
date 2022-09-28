@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BB_kurzusfelvetel SYSTEM "../NWTTCA_0928/BB_kurzusfelvetel.dtd">
+
+<BB_kurzusfelvetel tanev="2022_2023 I." egyetem="ME">
+
+    <hallgato id="KPRLNM.ME">
+        <hnev>Bártfai Bálint</hnev>
+        <szulev>2001-03-21</szulev>
+        <szak evf="5">Programtervező informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL322-B">
+            <kurzusnev>Adatakezelés XML kornyezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:00</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL322-B" jovahagyas="igen">
+            <kurzusnev>Adatakezelés XML kornyezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In101</hely>
+            <idopont>Szerda 12:00-14:00</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL314-B" nyelv="magyar">
+            <kurzusnev>Szoftvertechnológiák</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXIII</hely>
+            <idopont>Csütörtök 08:00-10:00</idopont>
+            <oktato>Dr. Mileff Péter</oktato>
+        </kurzus>
+
+        <kurzus id="GEIAL314-B" nyelv="magyar">
+            <kurzusnev>Szoftvertechnológiák</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXIII</hely>
+            <idopont>Csütörtök 10:00-12:00</idopont>
+            <oktato>Dr. Mileff Péter</oktato>
+        </kurzus>
+
+        <kurzus id="GEMAKSzGyBP-B" jovahagyas="igen">
+            <kurzusnev>Szakmai gyakorlat</kurzusnev>
+            <kredit>0</kredit>
+            <hely>-</hely>
+            <idopont>-</idopont>
+            <oktato>Dr. Körei Attila</oktato>
+        </kurzus>
+
+        <kurzus id="GEMAK263-B" jovahagyas="igen">
+            <kurzusnev>Szakdolgozatkészítés II.</kurzusnev>
+            <kredit>15</kredit>
+            <hely>-</hely>
+            <idopont>-</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+    </kurzusok>
+</BB_kurzusfelvetel>
