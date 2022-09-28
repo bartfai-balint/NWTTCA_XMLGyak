@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE adatbazis SYSTEM "BB_adatbazis.dtd">
+
+<adatbazis>
+    <dolgozo kod="A1">
+        <nev> Kis Béla</nev>
+        <fizetes>600000</fizetes>
+    </dolgozo>
+
+    <dolgozo kod="B2">
+        <nev> Nagy Béla</nev>
+        <fizetes>500000</fizetes>
+    </dolgozo>
+
+    <dolgozo kod="C3">
+        <nev> Közepes Béla</nev>
+    <fizetes> 550000</fizetes>
+    </dolgozo>
+
+</adatbazis>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE document SYSTEM "BB_ertodtd.dtd">
+
+<document>
+	<A Aa="A1">
+		<Ab>
+			<Abx>AX1</Abx>
+			<Aby>AY1</Aby>
+		</Ab>
+		<Ab>
+			<Abx>AX2</Abx>
+			<Aby>AY2</Aby>
+		</Ab>
+		<Ac>
+			<Acd>D</Acd>
+			<Ace>E</Ace>
+		</Ac>
+	</A>
+	<B Ba="B1" Bc="C1">
+		<Bb>
+			<Bbx>BX</Bbx>
+			<Bby>BY</Bby>
+		</Bb>
+	</B>
+	<C Ca="C1">
+		<Cb>B</Cb>
+	</C>
+	<A_B A_B_a="A1" A_B_b="B1">
+		<A_Bc>C</A_Bc>
+	</A_B>
+</document>
