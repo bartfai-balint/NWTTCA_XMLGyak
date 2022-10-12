@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BB_orarend.xsd">
+
+<!-- <orarend> -->
+
+	<ora id="1" tipus="Elöadás">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+			<nap>Kedd</nap>
+			<tol>12:00:00</tol>
+			<ig>14:00:00</ig>
+		</idopont>
+		<helyszin>I A2 fsz</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="2" tipus="Gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+			<nap>Szerda</nap>
+			<tol>12:00:00</tol>
+			<ig>14:00:00</ig>
+		</idopont>
+		<helyszin>info 1 emelet 101</helyszin>
+		<oktato>Bednarik László</oktato>
+		<szak>Programtervező Informatikus</szak>
+    
+    </ora>
+
+    <ora id="3" tipus="Elöadás">
+        <targy>Szoftvertechnológiák</targy>
+            <idopont>
+			<nap>Csütörtök</nap>
+			<tol>08:00:00</tol>
+			<ig>10:00:00</ig>
+		</idopont>
+		<helyszin>XXXIII A1 magasfsz em. XXXIII</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>Programtervező Informatikus</szak>
+    
+    </ora>
+
+    <ora id="4" tipus="Gyakorlat">
+        <targy>Szoftvertechnológiák</targy>
+        <idopont>
+		    <nap>Csütörtök</nap>
+		    <tol>10:00:00</tol>
+		    <ig>12:00:00</ig>
+		</idopont>
+		<helyszin>XXXIII A1 magasfsz em. XXXIII</helyszin>
+		<oktato>Dr. Mileff Péter</oktato>
+		<szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="5" tipus="Elöadás">
+        <targy>Szakmai gyakorlat</targy>
+        <idopont>
+		    <nap>-</nap>
+		    <tol>00:00:00</tol>
+		    <ig>00:00:00</ig>
+		</idopont>
+		<helyszin>-</helyszin>
+		<oktato>Dr. Földvári Attila József</oktato>
+		<szak>Programtervező Informatikus</szak>
+    </ora>
+
+    <ora id="6" tipus="Elöadás">
+        <targy>Szakdolgozat készítés II</targy>
+            <idopont>
+			<nap>-</nap>
+			<tol>00:00:00</tol>
+			<ig>00:00:00</ig>
+		</idopont>
+		<helyszin>-</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>Programtervező Informatikus</szak>
+    </ora>
+</orarend>
