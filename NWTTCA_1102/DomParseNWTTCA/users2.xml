@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<users xmlns="DOMNWTTCA">
+    <user firstname="Bártfai" id="1" lastname="Bálint" profession="programtervező"/>
+    <user firstname="Horanek" id="2" lastname="Dávid" profession="programtervező"/>
+    <user firstname="Ferencsik" id="3" lastname="Márk" profession="programtervező"/>
+</users>

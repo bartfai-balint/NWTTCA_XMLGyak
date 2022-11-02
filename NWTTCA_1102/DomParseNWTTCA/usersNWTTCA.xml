@@ -1,0 +1,19 @@
+<users>
+	<user id="1">
+		<firstname>Bártfai</firstname>
+		<lastname>Bálint</lastname>
+		<profession>Programtervező</profession>
+	</user>
+	
+	<user id="2">
+		<firstname>Horanek</firstname>
+		<lastname>Dávid</lastname>
+		<profession>Programtervező</profession>
+	</user>
+	
+	<user id="3">
+		<firstname>Ferencsik</firstname>
+		<lastname>Márk</lastname>
+		<profession>Programtervező</profession>
+	</user>
+</users>
