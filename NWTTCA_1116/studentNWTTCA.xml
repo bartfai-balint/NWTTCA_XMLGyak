@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type = "text/xsl" href= "studentNWTTCA.xsl"?>
+
+<class>
+	<student id="01">
+		<keresztnev>Bálint</keresztnev>
+		<vezeteknev>Bártfai</vezeteknev>
+		 <becenev>Béci</becenev>
+		 <kor>21</kor>
+		 <osztondij>60000</osztondij>
+	</student>
+	
+	<student id="02">
+		<keresztnev>Pista</keresztnev>
+		<vezeteknev>Kis</vezeteknev>
+		 <becenev>Pityu</becenev>
+		 <kor>22</kor>
+		 <osztondij>20000</osztondij>
+	</student>
+	
+	<student id="03">
+		<keresztnev>Nagy</keresztnev>
+		<vezeteknev>Sándor</vezeteknev>
+		 <becenev>Sanya</becenev>
+		 <kor>21</kor>
+		 <osztondij>50000</osztondij>
+	</student>
+</class>
