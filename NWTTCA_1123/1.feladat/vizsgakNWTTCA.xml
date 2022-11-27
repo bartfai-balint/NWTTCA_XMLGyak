@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <_id>NWTTCA</_id>
+  <vizsga>
+    <kurzus>Gazadasági és pénzügyi modellek</kurzus>
+    <helyszin>L030</helyszin>
+    <idopont>
+      <nap>2022,05,18</nap>
+      <tol>08:00</tol>
+      <ig>09:00</ig>
+    </idopont>
+    <oktato>Dr. Túri József</oktato>
+    <jegy>2</jegy>
+  </vizsga>
+  <vizsga>
+    <kurzus>Numerikus analízis</kurzus>
+    <helyszin>E30</helyszin>
+    <idopont>
+      <nap>2022,05,17</nap>
+      <tol>08:00</tol>
+      <ig>10:00</ig>
+    </idopont>
+    <oktato>Dr. Karácsony Zsolt</oktato>
+    <jegy>2</jegy>
+  </vizsga>
+  <vizsga>
+    <kurzus>Autómaták és formális nyelvek</kurzus>
+    <helyszin>E20</helyszin>
+    <idopont>
+      <nap>2022.06.07</nap>
+      <tol>08:00</tol>
+      <ig>10:00</ig>
+    </idopont>
+    <oktato>Dr. Radeleczki Sándor</oktato>
+    <jegy>3</jegy>
+  </vizsga>
+  <vizsga>
+    <kurzus>Objektum orientált programozás</kurzus>
+    <helyszin>L102</helyszin>
+    <idopont>
+      <nap>2022.06.01</nap>
+      <tol>09:00</tol>
+      <ig>12:00</ig>
+    </idopont>
+    <oktato>Dr. Baksáné Dr. Varga Erika</oktato>
+    <jegy>3</jegy>
+  </vizsga>
+</root>
