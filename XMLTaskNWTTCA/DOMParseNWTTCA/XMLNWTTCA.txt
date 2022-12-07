@@ -1,0 +1,393 @@
+Szervezok
+   Szervezo  Attributes: [SzervezoId : 123]
+      Nev
+         Bártfai Bálint
+      Beosztas
+         Tulaj
+      Eletkor
+         21
+      VersenyId_FK
+         145
+   Szervezo  Attributes: [SzervezoId : 124]
+      Nev
+         Tóth Imre
+      Beosztas
+         Halõr
+      Eletkor
+         76
+      VersenyId_FK
+         145
+   Szervezo  Attributes: [SzervezoId : 125]
+      Nev
+         Tari Levente
+      Beosztas
+         Zsûri
+      Eletkor
+         21
+      VersenyId_FK
+         145
+   Szervezo  Attributes: [SzervezoId : 126]
+      Nev
+         Ötvös Ádám Balázs
+      Beosztas
+         Mérõ
+      Eletkor
+         22
+      VersenyId_FK
+         145
+   Szervezo  Attributes: [SzervezoId : 127]
+      Nev
+         Bártfai László
+      Beosztas
+         Tulaj
+      Eletkor
+         62
+      VersenyId_FK
+         146
+   Szervezo  Attributes: [SzervezoId : 128]
+      Nev
+         Jánosi Marcell
+      Beosztas
+         Halõr
+      Eletkor
+         30
+      VersenyId_FK
+         146
+   Szervezo  Attributes: [SzervezoId : 129]
+      Nev
+         Görög Bence
+      Beosztas
+         Zsûri
+      Eletkor
+         24
+      VersenyId_FK
+         146
+   Szervezo  Attributes: [SzervezoId : 130]
+      Nev
+         Horanek Dávid
+      Beosztas
+         Mérõ
+      Eletkor
+         22
+      VersenyId_FK
+         146
+   Szervezo  Attributes: [SzervezoId : 131]
+      Nev
+         Nácsa Ádám
+      Beosztas
+         Tulaj
+      Eletkor
+         24
+      VersenyId_FK
+         147
+   Szervezo  Attributes: [SzervezoId : 132]
+      Nev
+         Csikja Zoltán
+      Beosztas
+         Halõr
+      Eletkor
+         24
+      VersenyId_FK
+         147
+   Szervezo  Attributes: [SzervezoId : 133]
+      Nev
+         Medve Zoltán
+      Beosztas
+         Zsûri
+      Eletkor
+         35
+      VersenyId_FK
+         147
+   Szervezo  Attributes: [SzervezoId : 134]
+      Nev
+         Honti Dániel
+      Beosztas
+         Mérõ
+      Eletkor
+         22
+      VersenyId_FK
+         147
+Versenyek
+   Verseny  Attributes: [VersenyId : 145]
+      Nev
+         Fárasztó horgászverseny
+      Idotartalom
+         24
+      Korlatozas
+         ponty tilalom
+      Helyszin
+         Utca
+            Jászapáti út.
+         Telepules
+            Kál
+   Verseny  Attributes: [VersenyId : 146]
+      Nev
+         I. Bojli kupa
+      Idotartalom
+         48
+      Korlatozas
+         nincsen
+      Helyszin
+         Utca
+            Erkel Ferenc út.
+         Telepules
+            Heves
+   Verseny  Attributes: [VersenyId : 147]
+      Nev
+         II. Bojli kupa
+      Idotartalom
+         24
+      Korlatozas
+         etetõ csónak tilalom
+      Helyszin
+         Utca
+            Eper utca.
+         Telepules
+            Miskolc
+Szektorok
+   Szektor  Attributes: [SzektorId : 191]
+      Kapacitas
+         12
+      Sorszam
+         1
+      Elhelyezkedes
+         Eszak
+      Szellirany
+         Eszak-Kelet
+      VersenyId_FK
+         145
+   Szektor  Attributes: [SzektorId : 192]
+      Kapacitas
+         24
+      Sorszam
+         2
+      Elhelyezkedes
+         Del
+      Szellirany
+         Eszak-Nyugat
+      VersenyId_FK
+         145
+   Szektor  Attributes: [SzektorId : 193]
+      Kapacitas
+         36
+      Sorszam
+         3
+      Elhelyezkedes
+         Del
+      Szellirany
+         Del
+      VersenyId_FK
+         146
+   Szektor  Attributes: [SzektorId : 194]
+      Kapacitas
+         12
+      Sorszam
+         4
+      Elhelyezkedes
+         Nyugat
+      Szellirany
+         Észak
+      VersenyId_FK
+         146
+   Szektor  Attributes: [SzektorId : 195]
+      Kapacitas
+         24
+      Sorszam
+         5
+      Elhelyezkedes
+         Kelet
+      Szellirany
+         Del
+      VersenyId_FK
+         147
+   Szektor  Attributes: [SzektorId : 196]
+      Kapacitas
+         24
+      Sorszam
+         6
+      Elhelyezkedes
+         Eszak
+      Szellirany
+         Del-Nyugat
+      VersenyId_FK
+         147
+Stegek
+   Steg  Attributes: [StegId : 201]
+      Sorszam
+         1
+      Ferohely
+         2
+      Tipusa
+         Úszó
+      SzektorId_FK
+         191
+   Steg  Attributes: [StegId : 202]
+      Sorszam
+         2
+      Ferohely
+         4
+      Tipusa
+         Földi
+      SzektorId_FK
+         191
+   Steg  Attributes: [StegId : 203]
+      Sorszam
+         3
+      Ferohely
+         2
+      Tipusa
+         Úszó
+      SzektorId_FK
+         192
+   Steg  Attributes: [StegId : 204]
+      Sorszam
+         4
+      Ferohely
+         2
+      Tipusa
+         Úszó
+      SzektorId_FK
+         192
+   Steg  Attributes: [StegId : 205]
+      Sorszam
+         5
+      Ferohely
+         4
+      Tipusa
+         Földi
+      SzektorId_FK
+         193
+   Steg  Attributes: [StegId : 206]
+      Sorszam
+         6
+      Ferohely
+         2
+      Tipusa
+         Földi
+      SzektorId_FK
+         193
+   Steg  Attributes: [StegId : 207]
+      Sorszam
+         7
+      Ferohely
+         4
+      Tipusa
+         Földi
+      SzektorId_FK
+         194
+   Steg  Attributes: [StegId : 208]
+      Sorszam
+         8
+      Ferohely
+         2
+      Tipusa
+         Úszó
+      SzektorId_FK
+         194
+   Steg  Attributes: [StegId : 209]
+      Sorszam
+         9
+      Ferohely
+         2
+      Tipusa
+         Úszó
+      SzektorId_FK
+         195
+   Steg  Attributes: [StegId : 210]
+      Sorszam
+         10
+      Ferohely
+         2
+      Tipusa
+         Földi
+      SzektorId_FK
+         195
+   Steg  Attributes: [StegId : 211]
+      Sorszam
+         11
+      Ferohely
+         4
+      Tipusa
+         Földi
+      SzektorId_FK
+         196
+   Steg  Attributes: [StegId : 212]
+      Sorszam
+         12
+      Ferohely
+         2
+      Tipusa
+         Úszó
+      SzektorId_FK
+         196
+Horgaszok
+   Horgasz  Attributes: [HorgaszId : 301]
+      Felszereles
+         feeder
+      Engedely
+         Ideiglenes
+            Van
+         Allando
+            Nincs
+      Nev
+         Bakos Dominik
+      Sorszam
+         1
+      Nevezesidij
+         5000
+   Horgasz  Attributes: [HorgaszId : 302]
+      Felszereles
+         bojli
+      Engedely
+         Ideiglenes
+            Van
+         Allando
+            Nincs
+      Nev
+         Tóth Richárd
+      Sorszam
+         2
+      Nevezesidij
+         8000
+   Horgasz  Attributes: [HorgaszId : 303]
+      Felszereles
+         feeder
+      Engedely
+         Idegiglenes
+            Nincs
+         Allando
+            Van
+      Nev
+         Galvács Zalán
+      Sorszam
+         3
+      Nevezesidij
+         5000
+v-hs
+   v-h
+      HorgaszId_FK
+         301
+      VersenyId_FK
+         145
+      Statisztika
+         5
+      Halak
+         5
+   v-h
+      HorgaszId_FK
+         302
+      VersenyId_FK
+         146
+      Statisztika
+         3
+      Halak
+         6
+   v-h
+      HorgaszId_FK
+         303
+      VersenyId_FK
+         147
+      Statisztika
+         7
+      Halak
+         10

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+    <xs:element name="Horgaszverseny">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="Szervezok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Szervezo" type="SzervezoTipus" minOccurs="0" maxOccurs="unbounded" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Versenyek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Verseny" type="VersenyTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Szektorok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Szektor" type="SzektorTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Stegek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Steg" type="StegTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="Horgaszok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Horgasz" type="HorgaszTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                
+                <xs:element name="v-hs">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="v-h" type="v-hTipus" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+
+        <xs:unique name="VersenyId_FK">
+            <xs:selector xpath="Versenyek/Verseny"/>
+            <xs:field xpath="@VersenyId"/>
+        </xs:unique>
+
+        <xs:unique name="SzektorId_FK">
+            <xs:selector xpath="Szektorok/Szektor"/>
+            <xs:field xpath="@SzektorID"/>
+        </xs:unique>
+
+        <xs:unique name="HorgaszId_FK">
+            <xs:selector xpath="Horgaszok/Horgasz"/>
+            <xs:field xpath="@HorgaszId"/>
+        </xs:unique>
+
+
+        <xs:keyref name="VersenyId_FK-Szervezok" refer="VersenyId_FK">
+            <xs:selector xpath="Szervezok/Szervezo/VersenyId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="VersenyId_FK-Szektorok" refer="VersenyId_FK">
+            <xs:selector xpath="Szektorok/Szektor/VersenyId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="SzektorId_FK-Stegek" refer="SzektorId_FK">
+            <xs:selector xpath="Stegek/Steg/SzektorId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="VersenyId_FK-v-hs" refer="VersenyId_FK">
+            <xs:selector xpath="v-hs/v-h/VersenyId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+
+        <xs:keyref name="HorgaszId_FK-v-hs" refer="HorgaszId_FK">
+            <xs:selector xpath="Stegek/Steg/HorgaszId_FK"/>
+            <xs:field xpath="."/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="SzervezoTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Beosztas" type="xs:string"/>
+            <xs:element name="Eletkor" type="xs:integer"/>
+            <xs:element name="VersenyId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="SzervezoId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="VersenyTipus">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Idotartalom" type="xs:integer"/>
+            <xs:element name="Korlatozas" type="versenyTipus"/>
+            <xs:element name="Helyszin" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="VersenyId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="SzektorTipus">
+        <xs:sequence>
+            <xs:element name="Kapacitas" type="xs:integer"/>
+            <xs:element name="Sorszam" type="xs:integer"/>
+            <xs:element name="Elhelyezkedes" type="xs:string"/>
+            <xs:element name="Szellirany" type="xs:string"/>
+            <xs:element name="VersenyId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="SzektorId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+
+    <xs:complexType name="StegTipus">
+        <xs:sequence>
+            <xs:element name="Sorszam" type="xs:integer"/>
+            <xs:element name="Ferohely" type="xs:integer"/>
+            <xs:element name="Tipus" type="xs:string"/>
+            <xs:element name="SzektorId_FK" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="StegId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="HorgaszTipus">
+        <xs:sequence>
+            <xs:element name="Felszereles" type="xs:string"/>
+            <xs:element name="Engedely" type="engedelyTipus"/>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Sorszam" type="xs:integer"/>
+            <xs:element name="Nevezesidij" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="HorgaszId" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:integer">
+                    <xs:pattern value="[0-9][0-9][0-9]" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="v-hTipus">
+        <xs:sequence>
+            <xs:element name="HorgaszId_FK" type="xs:integer"/>
+            <xs:element name="VersenyId_FK" type="xs:integer"/>
+            <xs:element name="Statisztika" type="xs:integer"/>
+            <xs:element name="Halak" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="versenyTipus">
+        <xs:sequence>
+            <xs:element name="Utca" type="xs:string"/>
+            <xs:element name="Telepules" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="engedelyTipus">
+        <xs:sequence>
+            <xs:element name="Ideiglenes" type="xs:string"/>
+            <xs:element name="Allando" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
